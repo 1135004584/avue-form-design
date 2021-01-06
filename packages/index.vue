@@ -485,7 +485,7 @@ export default {
      */
     importFromJson(json){
       try {
-        this.transAvueOptionsToFormDesigner(this.importJson).then(res => {
+        this.transAvueOptionsToFormDesigner(json).then(res => {
           this.widgetForm = res
           this.importJsonVisible = false
           this.handleHistoryChange(this.widgetForm)
