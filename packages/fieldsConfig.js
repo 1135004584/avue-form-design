@@ -6,6 +6,7 @@ export default [
       label: '分组',
       icon: 'icon-group',
       display: true,
+      listDisplay: true,
       arrow: false,
       collapse: true,
       children: {
@@ -17,6 +18,7 @@ export default [
       icon: 'icon-table',
       span: 24,
       display: true,
+      listDisplay: true,
       children: {
         align: 'center',
         headerAlign: 'center',
@@ -46,18 +48,21 @@ export default [
       label: '单行文本',
       icon: 'icon-input',
       span: 24,
-      display: true
+      display: true,
+      listDisplay: true,
     }, {
       type: 'password',
       label: '密码',
       icon: 'icon-password',
       span: 24,
+      listDisplay: true,
       display: true
     }, {
       type: 'textarea',
       label: '多行文本',
       icon: 'icon-textarea',
       span: 24,
+      listDisplay: true,
       display: true
     }, {
       type: 'number',
@@ -65,24 +70,28 @@ export default [
       icon: 'icon-number',
       controls: true,
       span: 24,
+      listDisplay: true,
       display: true,
     }, {
       type: 'url',
       label: '超链接',
       icon: 'icon-url',
       span: 24,
+      listDisplay: true,
       display: true
     }, {
       type: 'array',
       label: '数组',
       icon: 'icon-array',
       span: 24,
+      listDisplay: true,
       display: true,
     }, {
       type: 'img',
       label: '图片',
       icon: 'icon-img',
       span: 24,
+      listDisplay: true,
       display: true,
     }, {
       type: 'map',
@@ -90,6 +99,7 @@ export default [
       label: '地图选择器',
       icon: 'icon-map',
       span: 24,
+      listDisplay: true,
       display: true
     }]
   },
@@ -105,6 +115,7 @@ export default [
         { label: '选项三', value: '2' },
       ],
       span: 24,
+      listDisplay: true,
       display: true,
       dicOption: 'static',
       props: {
@@ -122,6 +133,7 @@ export default [
       ],
       span: 24,
       display: true,
+      listDisplay: true,
       dicOption: 'static',
       props: {
         label: 'label',
@@ -140,6 +152,7 @@ export default [
       cascaderItem: [],
       span: 24,
       display: true,
+      listDisplay: true,
       dicOption: 'static',
       props: {
         label: 'label',
@@ -151,6 +164,7 @@ export default [
       icon: 'icon-link',
       span: 24,
       display: true,
+      listDisplay: true,
       dicData: [
         {
           label: '选项一',
@@ -180,6 +194,7 @@ export default [
       icon: 'icon-tree',
       span: 24,
       display: true,
+      listDisplay: true,
       dicOption: 'static',
       dicData: [
         {
@@ -212,6 +227,7 @@ export default [
       span: 24,
       display: true,
       showFileList: true,
+      listDisplay: true,
       multiple: true,
       limit: 10,
       // props: {},
@@ -229,6 +245,7 @@ export default [
       icon: 'icon-year',
       span: 24,
       display: true,
+      listDisplay: true,
       format: 'yyyy',
       valueFormat: 'yyyy'
     }, {
@@ -237,6 +254,7 @@ export default [
       icon: 'icon-month',
       span: 24,
       display: true,
+      listDisplay: true,
       format: 'MM',
       valueFormat: 'MM'
     }, {
@@ -245,6 +263,7 @@ export default [
       icon: 'icon-week',
       span: 24,
       display: true,
+      listDisplay: true,
       format: 'yyyy 第 WW 周',
     }, {
       type: 'date',
@@ -252,6 +271,7 @@ export default [
       icon: 'icon-date',
       span: 24,
       display: true,
+      listDisplay: true,
       format: 'yyyy-MM-dd',
       valueFormat: 'yyyy-MM-dd'
     }, {
@@ -260,6 +280,7 @@ export default [
       icon: 'icon-time',
       span: 24,
       display: true,
+      listDisplay: true,
       format: 'HH:mm:ss',
       valueFormat: 'HH:mm:ss'
     }, {
@@ -268,6 +289,7 @@ export default [
       icon: 'icon-datetime',
       span: 24,
       display: true,
+      listDisplay: true,
       format: 'yyyy-MM-dd HH:mm:ss',
       valueFormat: 'yyyy-MM-dd HH:mm:ss'
     }, {
@@ -276,6 +298,7 @@ export default [
       icon: 'icon-date-range',
       span: 24,
       display: true,
+      listDisplay: true,
       format: 'yyyy-MM-dd',
       valueFormat: 'yyyy-MM-dd'
     }, {
@@ -284,6 +307,7 @@ export default [
       icon: 'icon-time-range',
       span: 24,
       display: true,
+      listDisplay: true,
       format: 'HH:mm:ss',
       valueFormat: 'HH:mm:ss'
     }, {
@@ -292,6 +316,7 @@ export default [
       icon: 'icon-datetime-range',
       span: 24,
       display: true,
+      listDisplay: true,
       format: 'yyyy-MM-dd HH:mm:ss',
       valueFormat: 'yyyy-MM-dd HH:mm:ss'
     }],
@@ -305,6 +330,7 @@ export default [
       icon: 'icon-richtext',
       span: 24,
       display: true,
+      listDisplay: true,
       action: '',
       oss: '',
       props: {},
@@ -321,6 +347,7 @@ export default [
       icon: 'icon-icon',
       span: 24,
       display: true,
+      listDisplay: true,
       params: {
         iconList: [{
           label: '基本图标',
@@ -339,6 +366,7 @@ export default [
       icon: 'icon-switch',
       span: 24,
       display: true,
+      listDisplay: true,
       value: '0',
       dicData: [{ label: '', value: '0' }, { label: '', value: '1' }]
     }, {
@@ -347,6 +375,7 @@ export default [
       icon: 'icon-star',
       span: 24,
       display: true,
+      listDisplay: true,
       max: 5,
       value: 0,
       texts: ['极差', '失望', '一般', '满意', '惊喜'],
@@ -357,6 +386,7 @@ export default [
       icon: 'icon-slider',
       span: 24,
       display: true,
+      listDisplay: true,
       min: 0,
       max: 10
     }, {
@@ -364,7 +394,8 @@ export default [
       label: '颜色选择器',
       icon: 'icon-color',
       span: 24,
-      display: true
+      display: true,
+      listDisplay: true
     }]
   }
 ]

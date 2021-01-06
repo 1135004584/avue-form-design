@@ -84,20 +84,20 @@
             </template>
           </div>
           <div style="display: flex; align-items: center;">
-            <iframe src="https://ghbtns.com/github-btn.html?user=sscfaith&repo=avue-form-design&type=star&count=true"
-                    frameborder="0"
-                    scrolling="0"
-                    width="100"
-                    height="20"
-                    title="GitHub"
-                    style="margin-left: 10px;"
-                    v-if="showGithubStar"></iframe>
+<!--            <iframe src="https://ghbtns.com/github-btn.html?user=sscfaith&repo=avue-form-design&type=star&count=true"-->
+<!--                    frameborder="0"-->
+<!--                    scrolling="0"-->
+<!--                    width="100"-->
+<!--                    height="20"-->
+<!--                    title="GitHub"-->
+<!--                    style="margin-left: 10px;"-->
+<!--                    v-if="showGithubStar"></iframe>-->
             <slot name="toolbar-left"></slot>
-            <el-button v-if="toolbar.includes('avue-doc')"
-                       type="text"
-                       size="medium"
-                       icon="el-icon-document"
-                       @click="handleAvueDoc">Avue文档</el-button>
+<!--            <el-button v-if="toolbar.includes('avue-doc')"-->
+<!--                       type="text"-->
+<!--                       size="medium"-->
+<!--                       icon="el-icon-document"-->
+<!--                       @click="handleAvueDoc">Avue文档</el-button>-->
             <el-button v-if="toolbar.includes('import')"
                        type="text"
                        size="medium"
@@ -477,6 +477,21 @@ export default {
           this.widgetFormPreview = data
           this.previewVisible = true
         })
+      }
+    },
+    /**
+     * 导入json
+     * @param json
+     */
+    importFromJson(json){
+      try {
+        this.transAvueOptionsToFormDesigner(this.importJson).then(res => {
+          this.widgetForm = res
+          this.importJsonVisible = false
+          this.handleHistoryChange(this.widgetForm)
+        })
+      } catch (e) {
+        this.$message.error(e.message)
       }
     },
     // 导入JSON - 弹窗 - 确定

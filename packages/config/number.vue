@@ -46,6 +46,9 @@
                 label="right">右
       </el-radio>
     </el-form-item>
+    <el-form-item label="列表可见">
+      <el-switch v-model="data.listDisplay"></el-switch>
+    </el-form-item>
     <el-form-item label="是否只读">
       <el-switch v-model="data.readonly"></el-switch>
     </el-form-item>

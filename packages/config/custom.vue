@@ -5,6 +5,9 @@
                 clearable
                 placeholder="标题宽度"></el-input>
     </el-form-item>
+    <el-form-item label="列表可见">
+      <el-switch v-model="data.listDisplay"></el-switch>
+    </el-form-item>
     <div class="el-form-item el-form-item--small el-form--label-top">
       <label class="el-form-item__label"
              style="padding: 0;">自定义属性：</label>

@@ -5,6 +5,9 @@
                 clearable
                 placeholder="占位内容"></el-input>
     </el-form-item>
+    <el-form-item label="列表可见">
+      <el-switch v-model="data.listDisplay"></el-switch>
+    </el-form-item>
     <el-form-item label="是否禁用">
       <el-switch v-model="data.disabled"></el-switch>
     </el-form-item>

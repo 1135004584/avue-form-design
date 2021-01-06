@@ -4,6 +4,16 @@
              label-suffix="："
              label-width="130px"
              size="small">
+      <el-form-item label="表单名称">
+        <el-input v-model="data.formName"
+                  placeholder="表单名称"
+        ></el-input>
+      </el-form-item>
+      <el-form-item label="表名">
+        <el-input v-model="data.tableName"
+                  placeholder="以online_form_开头"
+        ></el-input>
+      </el-form-item>
       <el-form-item label="标签对齐方式">
         <el-select v-model="data.labelPosition"
                    placeholder="标签对齐方式">
