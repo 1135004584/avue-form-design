@@ -562,6 +562,19 @@ export default {
       this.widgetModels = {}
       this.previewVisible = false
     },
+    /**
+     * 清空表单
+     */
+    clearForm(){
+      if (this.widgetForm && this.widgetForm.column && this.widgetForm.column.length > 0) {
+        this.$set(this.widgetForm, 'column', [])
+        this.$set(this, 'widgetModels', {})
+        this.$set(this, 'widgetFormSelect', {})
+        this.handleHistoryChange(this.widgetForm)
+        this.$set(this.widgetForm,'formName','')
+        this.$set(this.widgetForm,'tableName','')
+      }
+    },
     // 清空
     handleClear() {
       if (this.widgetForm && this.widgetForm.column && this.widgetForm.column.length > 0) {
