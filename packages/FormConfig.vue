@@ -126,6 +126,30 @@
         <el-input v-model="data.emptyText"
                   placeholder="提交按钮的文字"></el-input>
       </el-form-item>
+      <el-form-item label="创建时间排序">
+        <el-switch v-model="data.createTimeSort"></el-switch>
+      </el-form-item>
+      <el-form-item label="创建人排序">
+        <el-switch v-model="data.createBySort"></el-switch>
+      </el-form-item>
+      <el-form-item label="更新时间排序">
+        <el-switch v-model="data.updateTimeSort"></el-switch>
+      </el-form-item>
+      <el-form-item label="更新人排序">
+        <el-switch v-model="data.updateBySort"></el-switch>
+      </el-form-item>
+      <el-form-item label="更新人搜索">
+        <el-switch v-model="data.updateBySearch"></el-switch>
+      </el-form-item>
+      <el-form-item label="创建人搜索">
+        <el-switch v-model="data.createBySearch"></el-switch>
+      </el-form-item>
+      <el-form-item label="创建时间搜索">
+        <el-switch v-model="data.createTimeSearch"></el-switch>
+      </el-form-item>
+      <el-form-item label="更新时间搜索">
+        <el-switch v-model="data.updateTimeSearch"></el-switch>
+      </el-form-item>
       <el-form-item label="全局只读">
         <el-switch v-model="data.readonly"></el-switch>
       </el-form-item>

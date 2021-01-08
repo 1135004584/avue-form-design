@@ -18,8 +18,14 @@
         <el-radio-button label="mini">超小</el-radio-button>
       </el-radio-group>
     </el-form-item>
+    <el-form-item label="列表搜索">
+      <el-switch v-model="data.listSearch"></el-switch>
+    </el-form-item>
     <el-form-item label="列表可见">
       <el-switch v-model="data.listDisplay"></el-switch>
+    </el-form-item>
+    <el-form-item label="列表排序">
+      <el-switch v-model="data.listSort"></el-switch>
     </el-form-item>
     <el-form-item label="是否禁用">
       <el-switch v-model="data.disabled"></el-switch>

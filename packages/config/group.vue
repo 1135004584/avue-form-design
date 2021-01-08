@@ -12,6 +12,9 @@
                   v-if="data.arrow">
       <el-switch v-model="data.collapse"></el-switch>
     </el-form-item>
+    <el-form-item label="列表排序">
+      <el-switch v-model="data.listSort"></el-switch>
+    </el-form-item>
     <el-form-item label="列表可见">
       <el-switch v-model="data.listDisplay"></el-switch>
     </el-form-item>
