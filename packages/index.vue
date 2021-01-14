@@ -562,6 +562,9 @@ export default {
       this.widgetModels = {}
       this.previewVisible = false
     },
+    resetForm(){
+      this.$refs.form.resetForm();
+    },
     /**
      * 清空表单
      */

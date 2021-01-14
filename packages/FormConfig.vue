@@ -126,6 +126,18 @@
         <el-input v-model="data.emptyText"
                   placeholder="提交按钮的文字"></el-input>
       </el-form-item>
+      <el-form-item label="创建时间列表可见">
+        <el-switch v-model="data.createTimeListView"></el-switch>
+      </el-form-item>
+      <el-form-item label="创建人列表可见">
+        <el-switch v-model="data.createByListView"></el-switch>
+      </el-form-item>
+      <el-form-item label="更新时间列表可见">
+        <el-switch v-model="data.updateTimeListView"></el-switch>
+      </el-form-item>
+      <el-form-item label="更新人列表可见">
+        <el-switch v-model="data.updateByListView"></el-switch>
+      </el-form-item>
       <el-form-item label="创建时间排序">
         <el-switch v-model="data.createTimeSort"></el-switch>
       </el-form-item>
