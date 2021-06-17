@@ -168,6 +168,9 @@
       <el-form-item label="全局禁用">
         <el-switch v-model="data.disabled"></el-switch>
       </el-form-item>
+      <el-form-item label="业务字段">
+        <el-switch v-model="data.busiStatus"></el-switch>
+      </el-form-item>
       <!-- <el-form-item label="全局栅格">
         <el-input v-model="data.span"
                   placeholder="全局栅格"></el-input>
